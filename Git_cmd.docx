@@ -1,0 +1,78 @@
+Git commands
+
+I am performing all the following commands in VS Code Terminal
+
+1.	To check git version -> git –version
+
+2.	To create a username -> git config --global user.name “Swaraj”
+
+3.	To create a email address -> git config --global user.email  “naruyamieren@gmail.com”
+
+4.	To check the created username and email -> git config –list
+
+5.	To clone a repo to local machine from github -> git clone “PATH”
+PATH you have to copy from the github search bar.
+
+6.	To view hidden files -> ls -a or ls -hidden
+
+7.	To check the status of the git -> git status 
+
+It will display the if the commits are pending or done or any new file is added.
+GIT_STATUS has 4 status 
+Untracked – It means changes made in the committed file
+Modified – A new file is created inn the folder but it is not committed to repo
+Unmodified – No changes are made
+Staged – When any file is added and is ready to commit is staged status.
+Whenever new file is created or previous file is modified it has to be first added and then committed.
+It has two steps “ADD” & “COMMIT”
+
+8.	To add new or changed file in current working dir -> git add index.html
+INDEX.HTML is newly created file in local machine 
+
+9.	To push file from local machine to github -> git push origin main
+
+10.	To create a new repo and to add the current created folder in git -> git init 
+TO create a new repo – Create a new repo in github and give command to push the local repo folder in github new repo -> git push add origin “put here the link from github”
+
+11.	To check the added the remote repo -> git remote -v
+-v --- used to display the current configured remote repositories for your Git repository.
+
+12.	To check the current working branch -> git branch 
+
+13.	To change the branch -> git branch -M main
+
+14.	To push all the changes the in the current repo -> git push -u origin main
+-u --- it pushes the any changes made from remote file to github and after running this command if you want to push again any file you have to just give command -> git push
+
+15.	To create a new branch -> git branch -b (branch name)
+
+16.	TO delete a branch -> git branch -d (branch name)
+
+17.	From one branch to another -> git checkout branch name
+
+18.	To check the present working branch ->   git branch
+
+19.	To reflect the changes made on remote repo to local repo -> git push origin main
+
+20.	To merge the change from one branch to another -> git merge branch name
+NOTE : Here BRANCH_NAME must be of another branch and not of current working branch else changes won’t be merged.
+
+
+
+Undoing changes
+21.	Use command -> git reset (file name)
+When the change in the code is just staged and not committed and is for only one file
+
+22.	USE command -> git reset
+When the change in the code is just staged and not committed and to reset the code in different steps in file
+
+23.	To go back to previous commit (SINGLE)  -> git reset HEAD~1
+Here   “HEAD~1”  means from all the previous commit the commit that has been made recently is called HEAD commit and to just go one commit back we use “~1”.
+
+24.	To check all the commits -> git log
+
+25.	To commit back all the previous commits (MULTIPLE) -> git reset (hash)
+HASH is the unique number for each commit done. We can view the hash using git log command.
+
+FORK : A fork is a new repo that shares the code and visibility settings with the og upstream repo.
+Fork is a rough copy
